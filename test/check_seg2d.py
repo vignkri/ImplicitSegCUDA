@@ -4,6 +4,9 @@ import numpy as np
 import tqdm
 import cv2
 import argparse
+import matplotlib
+
+matplotlib.use( 'tkagg' )
 
 from implicit_seg.functional import Seg2dTopk, Seg2dLossless
 from implicit_seg.functional.utils import plot_mask2D
