@@ -2,6 +2,12 @@
 
 A Pytorch Segmentation module through implicit way (support 2d and 3d)
 
+## How to run
+
+- Make sure 'python3-dev' is installed for python_headesr file
+- Make sure the 'nvcc --version' is linked to your cuda
+    - In Ubuntu, do not auto-install `apt install nvidia-cuda-toolkit` as this installs version 10.2
+
 ## Install
 
 ```
