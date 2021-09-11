@@ -51,10 +51,10 @@ def plot_mask3D(
     point_marker_size (int): marker size for points
     '''
     import trimesh
-    import vtkplotter
+    import vedo
     from skimage import measure
 
-    vp = vtkplotter.Plotter(title=title, size=(figsize, figsize))
+    vp = vedo.Plotter(title=title, size=(figsize, figsize))
     vis_list = []
 
     if mask is not None:
@@ -80,7 +80,7 @@ def plot_mask3D(
         # select = np.logical_and(np.logical_and(select_x, select_y), select_z)
         # point_coords = point_coords[select, :]
 
-        pc = vtkplotter.Points(point_coords, r=point_marker_size, c='red')
+        pc = vedo.Points(point_coords, r=point_marker_size, c='red')
         vis_list.append(pc)
         
     vp.show(*vis_list, bg="white", axes=1, interactive=interactive, azimuth=30, elevation=30)
