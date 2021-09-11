@@ -7,6 +7,7 @@ A Pytorch Segmentation module through implicit way (support 2d and 3d)
 - Make sure 'python3-dev' is installed for python_headesr file
 - Make sure the 'nvcc --version' is linked to your cuda
     - In Ubuntu, do not auto-install `apt install nvidia-cuda-toolkit` as this installs version 10.2
+- For using with GUI for the images, Matplotlib uses `tkinter` and in most systems, you'll need to install `python3-tk` to allow Matplotlib to use the `tkagg` backend
 
 ## Install
 
